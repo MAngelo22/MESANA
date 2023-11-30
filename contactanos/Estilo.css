@@ -1,0 +1,30 @@
+/*
+Aqui esta la fuente
+*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+/*Titulos*/
+
+h1 {
+    color:aqua;
+    font: 120% url("fonts/Roboto-Regular.ttf");
+}
+
+
+h2 {
+    color:aqua;
+    font: 100% url("fonts/Roboto-Regular.ttf");
+}
+
+
+h3 {
+    color:aqua;
+    font: 80% url("fonts/Roboto-Regular.ttf");
+}
+/**/
