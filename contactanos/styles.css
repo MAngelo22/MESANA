@@ -1,0 +1,615 @@
+.header-container {
+    max-width: 1440px;
+    padding: 16px 64px;
+    background: white;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-section {
+        max-width: 120px; 
+        height: auto;
+        display: flex;
+        align-items: center;
+      
+}
+.logo {
+    width: 100%;
+    position: relative;
+  }
+
+.nav-links {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    height: 100%; 
+  }
+
+.nav-item:hover {
+    color: #518ACFE8; 
+}
+.nav-item {
+    color: black;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+.login-section {
+    padding: 8px 20px;
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-section:hover {
+    background-color: #333; 
+}
+
+.hero{
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 80 px auto;
+    padding: 0 64px;
+    max-width: 1440px;
+    margin-top: 80px;
+    padding-right: 60px;
+    padding-left: 64px;
+}
+
+.texto-hero p{ 
+    color: var(--Black, #000);
+
+    /* Text/Medium/Normal */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+.texto-hero h1{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: bold; /* 700 también es válido y es el equivalente a 'bold' */
+    line-height: 1.2;
+    margin-bottom: 30px;
+    animation: fadeInDown 1.5s ease-out forwards;
+}
+
+.texto-hero{
+    width:60%;
+    margin-right:60px;
+}
+.imagen img{ 
+    width:100%;
+    margin-left: 0%;
+    margin-right: 20%;
+}
+tones-hero{
+    display: flex;
+padding-top: 16px;
+align-items: center;
+}
+.boton-hero{
+    display: flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+background-color: #fff; /* Color de fondo inicial */
+color: #000; /* Color del texto */
+transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+overflow: hidden; /* Asegura que cualquier hijo moviéndose no se salga de los límites del botón */
+position: relative;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+transition: box-shadow 0.3s ease;
+
+}
+
+
+#concertarsesion{
+    border: 1px solid var(--Black, #000);
+    background: var(--Black, #000);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#concertarsesion:hover{
+    background-color: #ffffff; /* Cambia a fondo blanco en hover */
+    color: #000000;
+    cursor: pointer;
+}
+#micuenta{
+    background: white;
+    border: white;
+    
+}
+
+#micuenta.boton-hero:hover{
+    background-color: #f0f0f0;
+    cursor:pointer;
+    box-shadow: none;
+}
+
+#micuenta.boton-hero:hover .arrow {
+    transform: translateX(5px);
+    cursor:pointer;
+
+}
+
+
+
+ /*--------------------------------------------- Apartado "Servicios" ------------------------------------------ */
+
+
+
+
+
+.services-section {
+    
+        display: flex;
+        justify-content: space-between; /* Separa los elementos hijos */
+        align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+}
+
+.service-header{
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro del contenedor */
+    gap: 10px;
+}
+.image-container img {
+    width: 100%;
+    max-width: 600px; /* O el tamaño máximo de la imagen que prefieras */
+    height: auto;
+    display: block;
+    flex-basis: 50%;
+    margin-left:10%;
+}
+
+.services-container {
+  
+    max-width: 600px; /* O el tamaño máximo del contenedor que prefieras */
+        flex-basis: 45%;
+    padding-left: 22%;
+       
+}
+
+
+.service {
+
+    margin-top: 5%;
+}
+
+
+.service h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: var(--Black, #000);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+}
+
+.service p {
+    font-size: 1em;
+    margin: 0;
+    color: var(--Black, #000);
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-left:11%;
+}
+
+.service button {
+    margin-left:11%;
+}
+
+/* Asegúrate de incluir los media queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+    }
+
+    .image-container, .services-container {
+        width: 100%;
+    }
+
+    .service {
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+ /*--------------------------------------------- Apartado "Comunidad" ------------------------------------------ */
+
+
+
+.comunidad {
+    background-color: #f9f9f9; /* Color de fondo */
+    text-align: center; /* Centrar texto */
+    padding: 40px; /* Espaciado alrededor del contenido */
+    animation: 0.5s ease-out 0s 1
+  }
+  
+
+  
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    margin-bottom: 20px; /* Espaciado debajo del contenedor de tarjetas */
+  }
+  
+  .tarjeta {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado alrededor del contenido de la tarjeta */
+    text-align: left; /* Alineación del texto a la izquierda */
+  }
+  
+  .tarjeta img {
+    width: 100%; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 10px; /* Espaciado debajo de la imagen */
+    transition: transform 0.3s ease;
+  }
+ .tarjeta img:hover {
+    transform: scale(1.1);
+  }
+  
+  .tarjeta span {
+    display: inline-block; /* Para que el tiempo y la categoría estén uno al lado del otro */
+    margin-right: 5px; /* Espaciado a la derecha de los span */
+    color: #999; /* Color del texto de los span */
+  }
+  
+  .tarjeta h3 {
+    color: #333; /* Color del título de la tarjeta */
+    margin-bottom: 5px; /* Espaciado debajo del título de la tarjeta */
+  }
+  
+  .tarjeta p {
+    color: #666; /* Color del párrafo de la tarjeta */
+    margin-bottom: 10px; /* Espaciado debajo del párrafo */
+  }
+  
+  .tarjeta a {
+    color: #1a0dab; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+
+.comunidad h2{
+    color: var(--Black, #000);
+    text-align: center;
+
+
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+}
+.comunidad p{
+    color: var(--Black, #000);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+  .comunidad h3 {
+    color: var(--Black, #000);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+  .comunidad span{
+    color: var(--Black, #000);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+}
+.comunidad p{
+    color: var(--Black, #000);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.arrow{
+    transition: transform 0.3s ease; 
+
+    right: 10px; 
+}
+
+ /*--------------------------------------------- Apartado "Equipo" ------------------------------------------ */
+
+
+  .team-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.team-intro h2 {
+    margin-bottom: 10px;
+}
+
+.team-intro p {
+    color: #666; 
+    margin-bottom: 30px; 
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.member {
+    width: calc(33.333% - 20px); 
+    margin: 10px; 
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.member img {
+    max-width: 80%; 
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px; 
+    transition: transform 0.3s ease;
+}
+
+.member img:hover {
+    transform: scale(1.1);
+}
+
+
+.member h3
+{
+    color: var(--Black, #000);
+text-align: center;
+
+
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; 
+}
+.team-intro h2{
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.team-intro p{
+    color: var(--Black, #000);
+    text-align: center;
+
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.member p {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+
+}
+.subtitle{
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.conocermas{
+    border: 1px solid var(--Black, #000);
+    background-color: #ffffff;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+
+}
+
+.conocermas:hover{
+    background-color: black; 
+    color: white; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1024px) {
+    .member {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        justify-content: center;
+    }
+
+    .member {
+        width: 80%; /* Una columna para pantallas pequeñas */
+    }
+}
+
+
+ /*--------------------------------------------- Apartado "Footer" ------------------------------------------ */
+
+
+.site-footer {
+    text-align: center; /* Centrar enlaces de navegación */
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Espacio entre la navegación y la línea */
+}
+
+.footer-nav a {
+    color: var(--color-marca-azul-oscuro, #123747);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eaeaea; /* Color de la línea divisoria */
+    width: 100%; /* Ancho completo del footer */
+    margin-top: 10px; /* Espacio arriba de la línea */
+    margin-bottom: 20px; /* Espacio debajo de la línea */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los lados */
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left; /* Alinea el texto a la izquierda */
+    flex: 1; /* Permite que el elemento crezca para alinear los enlaces a la derecha */
+    color: var(--Black, #000);
+
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+.footer-right a {
+    margin: 0 10px; /* Espacio horizontal entre los enlaces */
+    color: var(--Black, #000);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+text-decoration-line: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 10px; /* Espacio entre el texto de copyright y los enlaces */
+    }
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    .slide-in {
+       animation-duration: 1s;
+       animation-name: slideInFromLeft;
+    }
+    .hero.slide-in {
+        animation-delay: 0s;
+    }
+    
+    .services-section.slide-in {
+        animation-delay: 0.5s;
+    }
+    
+    .comunidad.slide-in {
+        animation-delay: 1s;
+    }
+    
+    .team-section.slide-in {
+        animation-delay: 1.5s;
+    }
