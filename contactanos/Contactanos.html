@@ -5,118 +5,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mesana/Contactanos</title>
-  <link rel="stylesheet" href="../home/styles.css">
+  <link rel="stylesheet" href="../contactanos/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Ek+Mukta:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
 </head>
-<body >
-  <header>
-    <link rel="stylesheet" href="/css/navbar.css">
-    <div class="navbar">
-      <div class="logo-container" onclick="location.href='/home/index.html';">
-        <img loading="lazy" src="/media/svg/logo.svg" class="logo" />
-        <div class="logo-text">Mesana</div>
-      </div>
-      <div class="nav-links">
-        <div class="nav-link"><a href="/servicios/servicios.html">Servicios</a></div>
-        <div class="nav-link"><a href="/comunidad/comunidad.html">Comunidad</a></div>
-        <div class="nav-link"><a href="/quienes/quienes.html">Quiénes Somos</a></div>
-      </div>
-      <a href="/cuenta/iniciar.html" class="login-btn">Iniciar Sesión</a>
-    </div>
-  </header>
-  <!-- Parte de Formulario-->
-  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
-    <div class="form-content" style="width: auto; height: auto; padding-left: 64px; padding-right: 64px; background: white; border: 1px black solid; flex-direction: column; justify-content: center; align-items: center; gap: 80px; display: inline-flex">
 
-      <div style="align-self: stretch; height: 261px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: flex">
-        <div style="align-self: stretch; height: 109px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
-          <h1 >Contáctanos</h1>
-          <div style="align-self: stretch; color: black; font-size: 18px; font-family: Ek Mukta; font-weight: 400; line-height: 27px; word-wrap: break-word">Nuestro equipo atenderá tus dudas sobre nuestros servicios</div>
+<body>
+
+
+  <header class = "header-container">
+    <div class = "navbar">
+        <div class = "logo-section">
+         <a href="../home/index.html">><img src = "../home/assets/imagenes/logo.png" class  = "logo" /></a>
         </div>
-        <div style="padding-top: 8px; padding-bottom: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <div>
-            <h3>atcliente@mesana.com</h3>
-            <h3>+34 656 123 456</h3>
-            <h3>Avenida de los Naranjos 54, Madrid</h3>
-          </div>
+        <h1>Mesana</h1>
+        <div class = "nav-links">
+            <a class="nav-item" href="../servicios/servicios.html">Servicios</a>
+            <a class="nav-item" href="../comunidad/comunidad.html">Comunidad</a>
+            <a class="nav-item" href="../quienes/quienes.html">Quiénes somos</a>
+        </div>
+
+        <a class = "login-section" href="../cuenta/iniciar.html" >
+            <div> Iniciar Sesión</div>
+        </a>
+    </div>  
+</header>
+
+<!-- Parte de Formulario-->
+
+<div class="Formulario">
+
+  <div></div>
+
+    <div class="form1">
+      <div class="form1">
+        <h1 >Contáctanos</h1>
+        <div class="form2">Nuestro equipo atenderá tus dudas sobre nuestros servicios</div>
+      </div>
+      <div class="form1">
+        <div>
+          <h3>atcliente@mesana.com</h3>
+          <h3>+34 656 123 456</h3>
+          <h3>Avenida de los Naranjos 54, Madrid</h3>
+          <br><br>
         </div>
       </div>
-      <div style="align-self: stretch;height: 853px;flex-direction: column;justify-content: flex-start;align-items: center;gap: 24px;display: flex">
+    </div>
+    <div class="formulario02">
+     
+    <fieldset class="fieldset1">
+      <div class="agrupacion">
+        <div style="align-content: left;">
+        <label class="Label" for="nombre">Nombre </label>        
+        <input type="text" id="nombre"/><br><br>
+        <label class="Label" for="apellido">Apellido </label>
+        <input type="text" id="apellido"/><br><br></div>
+        <label class="Label" for="Email">Email </label>        
+        <input type="text" id="Email"/><br><br>
+        <label class="Label" for="Tlfn">Teléfono </label>        
+        <input type="text" id="Tlfn"/><br><br>
+
+        <div><Label class="Label" >Selecciona un Motivo:</Label> <br><br>
+        <form action="#">
+          <select name="Motivos" id="Moti">
+            <option value="default">Elegir Motivo...</option>
+            <option value="Psicologia">Psicologia</option>
+            <option value="Tca">TCA</option>
+            <option value="Tdah">TDAH</option>
+            <option value="Toc">TOC</option>
+          </select>
+         </form>
+      </div>
+    </fieldset>
+
+    <div class="Formulario02">
+      <h4> ¿Cómo nos conociste?</h4>
       
-        <fieldset style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 24px;">
-          <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 24px;">
-            <label style="align-self: stretch; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word"
-            for="nombre">Nombre </label>        
-            <input type="text" id="nombre"/><br><br>
-
-            <label style="align-self: stretch; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word" 
-            for="apellido">Apellido </label>
-            <input type="text" id="apellido"/><br><br>
-
-            <label style="align-self: stretch; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word"
-            for="Email">Email </label>        
-            <input type="text" id="Email"/><br><br>
-            
-            <label style="align-self: stretch; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word"
-            for="Tlfn">Teléfono </label>        
-            <input type="text" id="Tlfn"/><br><br>
-
-            <div><Label style="align-self: stretch; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word"
-            >Selecciona un Motivo:</Label> <br><br>
-            <form action="#">
-              <select name="Motivos" id="Moti">
-                <option value="default">Elegir Motivo...</option>
-                <option value="Psicologia">Psicologia</option>
-                <option value="Tca">TCA</option>
-                <option value="Tdah">TDAH</option>
-                <option value="Toc">TOC</option>
-              </select>
-            </form>
-          </div>
-        </fieldset>
-
-        <div style="align-self: stretch; height: 172px; padding-top: 16px; padding-bottom: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-          <h4 style="color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word"> ¿Cómo nos conociste?</h4>
+      <form action="radio">
+        <input class="RadioButton" type="radio" id="radio1">Recomendación Profesional      </input><br>
+        <input class="RadioButton" type="radio" id="radio2">Amigos/Familiares      </input><br>
+        <input class="RadioButton" type="radio" id="radio3">Públicidad impresa      </input><br>
+        <input class="RadioButton" type="radio" id="radio4">Búsqueda Google      </input><br>
+        <input class="RadioButton" type="radio" id="radio5">YouTube      </input><br>
+        <input class="RadioButton" type="radio" id="radio6">Otros      </input><br>
+      </form>
+    </div> <br> <br>
+      
+      <div class="formulario3">
+        <h4>
+          Mensaje:</h4>
           
-          <form action="radio">
-            <input style="width: 18px; height: 18px; position: relative; background: white; border-radius: 100px; border: 1px black solid" 
-            type="radio">Recomendación Profesional      </input><br>
-            <input style="width: 18px; height: 18px; position: relative; background: white; border-radius: 100px; border: 1px black solid" 
-            type="radio">Amigos/Familiares      </input><br>
-            <input style="width: 18px; height: 18px; position: relative; background: white; border-radius: 100px; border: 1px black solid" 
-            type="radio">Públicidad impresa      </input><br>
-            <input style="width: 18px; height: 18px; position: relative; background: white; border-radius: 100px; border: 1px black solid" 
-            type="radio">Búsqueda Google      </input><br>
-            <input style="width: 18px; height: 18px; position: relative; background: white; border-radius: 100px; border: 1px black solid" 
-            type="radio">YouTube      </input><br>
-            <input style="width: 18px; height: 18px; position: relative; background: white; border-radius: 100px; border: 1px black solid" 
-            type="radio">Otros      </input><br>
-          </form>
-        </div> <br> <br>
-        
-        <div style="align-self: stretch; height: 212px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
-          <h4 style="align-self: stretch; color: black; font-size: 16px; font-family: Roboto; font-weight: 400; line-height: 24px; word-wrap: break-word">
-            Mensaje</h4>
-            
-              <textarea>Introduce mensaje aquí</textarea>
-          
-          </div>
-
-          <div style="padding-bottom: 16px; justify-content: flex-start; align-items: center; gap: 12px;">
-            
-            <input style="width: 18px; height: 18px; position: relative; background: white; border: 1px black solid"
-            type="checkbox">Acepto los Términos y Politica de Privacidad</input> 
-            <br><br>
-          
-            <a class = "login-section" href="../contactanos/Contactanos.html">
-              <div>Enviar</div>
-          </a>
-          </div>
+            <textarea style="width: 638px; height: 90px;">Introduce mensaje aquí</textarea>
       </div>
-    </div>
-  </div>
+
+      <div style="padding-bottom: 16px; justify-content: flex-start; align-items: center; gap: 12px;">
+          
+          <input type="checkbox">Acepto los Términos y Politica de Privacidad</input> 
+          <br><br>
+        
+           <a class = "login-section" href="../contactanos/Contactanos.html">
+            <div>Enviar</div>
+        </a>
+      </div>
+
 </body>
 <link rel="stylesheet" href="/css/footer.css">
 <footer class="footer">
@@ -137,4 +129,25 @@
     </div>
 </footer>
 
+  <footer class="site-footer">
+    <div class="footer-nav">
+        <a href="../servicios/servicios.html">Servicios</a>
+        <a href="../comunidad/comunidad.html">Comunidad</a>
+        <a href="../quienes/quienes.html">Quiénes Somos</a>
+        <a href="../quienes/contacto.html">Contacto</a>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <div class="footer-left">
+            <span>Mesana 2023</span>
+            <span>@Copyright 2024</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Configuración Cookies</a>
+        </div>
+    </div>
+
+</footer>
 </html>
