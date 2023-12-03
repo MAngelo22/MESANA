@@ -1,0 +1,110 @@
+
+.no-disponible,
+.no-disponible * {
+  box-sizing: border-box;
+}
+.no-disponible {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0.625rem;
+  padding: 4rem 8rem 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+.content {
+  padding: 2rem 0rem 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.heading {
+  color: #000000;
+  text-align: left;
+  font: var(--heading-h-2, 700 6rem/120% "Roboto-Bold", sans-serif);
+  position: relative;
+  align-self: stretch;
+}
+.text {
+  color: var(--black, #000000);
+  text-align: left;
+  font: 400 2.25rem/150% "EkMukta-Regular", sans-serif;
+  position: relative;
+  align-self: stretch;
+}
+.icono {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.box-search-undefined-glyph-undefined {
+  flex-shrink: 0;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  overflow: visible;
+}
+@keyframes pulsacion {
+  0% {
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    box-shadow: 0rem 0.7rem 0.7rem 0.1rem rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
+  }
+}
+.button-cerrar {
+  animation: pulsacion 0.8s infinite; 
+  background: #000000;
+  border-style: solid;
+  border-color: var(--black, #000000);
+  border-width: 0.125rem;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+.button-cerrar:hover{
+    .cerrar {color: black;}
+    background-color: white;
+}
+.cerrar {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--text-regular-normal, 400 2rem/150% "Roboto-Regular", sans-serif);
+  position: relative;
+}

@@ -1,3 +1,14 @@
+.contenido{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccion1{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
 .header-container {
     max-width: 1440px;
     padding: 16px 64px;
@@ -82,19 +93,19 @@
 .texto-hero p{ 
     color: var(--Black, #000);
 
-    /* Text/Medium/Normal */
+    
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 27px */
+    line-height: 150%; 
 }
 
 .texto-hero h1{
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 48px; /* Ajusta el tamaño de la fuente según sea necesario */
-    font-weight: bold; /* 700 también es válido y es el equivalente a 'bold' */
+    font-size: 48px; 
+    font-weight: bold;
     line-height: 1.2;
     margin-bottom: 30px;
     animation: fadeInDown 1.5s ease-out forwards;
@@ -120,12 +131,12 @@ padding: 12px 24px;
 justify-content: center;
 align-items: center;
 gap: 8px;
-background-color: #fff; /* Color de fondo inicial */
-color: #000; /* Color del texto */
-transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-overflow: hidden; /* Asegura que cualquier hijo moviéndose no se salga de los límites del botón */
+background-color: #fff; 
+color: #000; 
+transition: background-color 0.3s ease; 
+overflow: hidden; 
 position: relative;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 transition: box-shadow 0.3s ease;
 
 }
@@ -138,7 +149,7 @@ transition: box-shadow 0.3s ease;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 #concertarsesion:hover{
-    background-color: #ffffff; /* Cambia a fondo blanco en hover */
+    background-color: #ffffff; 
     color: #000000;
     cursor: pointer;
 }
@@ -185,7 +196,7 @@ transition: box-shadow 0.3s ease;
 }
 .image-container img {
     width: 100%;
-    max-width: 600px; /* O el tamaño máximo de la imagen que prefieras */
+    max-width: 600px; 
     height: auto;
     display: block;
     flex-basis: 50%;
@@ -194,7 +205,7 @@ transition: box-shadow 0.3s ease;
 
 .services-container {
   
-    max-width: 600px; /* O el tamaño máximo del contenedor que prefieras */
+    max-width: 600px; 
         flex-basis: 45%;
     padding-left: 22%;
        
@@ -215,7 +226,7 @@ transition: box-shadow 0.3s ease;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 33.6px */
+    line-height: 140%; 
 }
 
 .service p {
@@ -226,7 +237,7 @@ transition: box-shadow 0.3s ease;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     margin-left:11%;
 }
 
@@ -234,7 +245,6 @@ transition: box-shadow 0.3s ease;
     margin-left:11%;
 }
 
-/* Asegúrate de incluir los media queries para hacerlo responsivo */
 @media (max-width: 768px) {
     .services-section {
         flex-direction: column;
@@ -321,7 +331,7 @@ transition: box-shadow 0.3s ease;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 57.6px */
+    line-height: 120%; 
 }
 .comunidad p{
     color: var(--Black, #000);
@@ -492,7 +502,7 @@ line-height: 150%;
     }
 
     .member {
-        width: 80%; /* Una columna para pantallas pequeñas */
+        width: 80%;
     }
 }
 
@@ -501,7 +511,7 @@ line-height: 150%;
 
 
 .site-footer {
-    text-align: center; /* Centrar enlaces de navegación */
+    text-align: center; 
     padding: 20px 0;
     background-color: #fff;
 }
@@ -545,7 +555,7 @@ font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 21px */
+line-height: 150%; 
 }
 
 .footer-right a {
@@ -555,7 +565,7 @@ font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 21px */
+line-height: 150%;
 text-decoration-line: underline;
 }
 

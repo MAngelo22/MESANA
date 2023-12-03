@@ -1,0 +1,165 @@
+.conocermas{
+    border: 1px solid var(--Black, #000);
+    background-color: #ffffff;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    cursor:pointer;
+
+}
+
+.conocermas:hover{
+    background-color: black; 
+    color: white; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1024px) {
+    .member {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        justify-content: center;
+    }
+
+    .member {
+        width: 80%; /* Una columna para pantallas pequeñas */
+    }
+}
+.login-section {
+    padding: 8px 20px;
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+ /*--------------------------------------------- Apartado "Footer" ------------------------------------------ */
+
+
+.site-footer {
+    text-align: center; /* Centrar enlaces de navegación */
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Espacio entre la navegación y la línea */
+}
+
+.footer-nav a {
+    color: var(--color-marca-azul-oscuro, #123747);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eaeaea; /* Color de la línea divisoria */
+    width: 100%; /* Ancho completo del footer */
+    margin-top: 10px; /* Espacio arriba de la línea */
+    margin-bottom: 20px; /* Espacio debajo de la línea */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los lados */
+    align-items: center;
+}
+
+.footer-left {
+    text-align: left; /* Alinea el texto a la izquierda */
+    flex: 1; /* Permite que el elemento crezca para alinear los enlaces a la derecha */
+    color: var(--Black, #000);
+
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+.footer-right a {
+    margin: 0 10px; /* Espacio horizontal entre los enlaces */
+    color: var(--Black, #000);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+text-decoration-line: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 10px; /* Espacio entre el texto de copyright y los enlaces */
+    }
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    .slide-in {
+       animation-duration: 1s;
+       animation-name: slideInFromLeft;
+    }
+    .hero.slide-in {
+        animation-delay: 0s;
+    }
+    
+    .services-section.slide-in {
+        animation-delay: 0.5s;
+    }
+    
+    .comunidad.slide-in {
+        animation-delay: 1s;
+    }
+    
+    .team-section.slide-in {
+        animation-delay: 1.5s;
+    }
