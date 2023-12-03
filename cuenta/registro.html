@@ -1,307 +1,186 @@
-<div class="div">
-    <div class="div-2">
-      <div class="column">
-        <div class="div-3">
-          <div class="div-4">Mesana</div>
-          <div class="div-5">Registro</div>
-          <div class="div-6">
-            Crea una cuenta para disfrutar de nuestros servicios
-          </div>
-          <div class="div-7">Nombre*</div>
-          <div class="div-8"></div>
-          <div class="div-9">Email*</div>
-          <div class="div-10"></div>
-          <div class="div-11">Contraseña*</div>
-          <div class="div-12"></div>
-          <div class="div-13">Registrarse</div>
-          <div class="div-14">
-            <div class="div-15">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/867eaba5-8eb2-48af-a648-9495a883f26c?"
-                class="img"
-              />
-              <div class="div-16">Registrarse con Google</div>
-            </div>
-          </div>
-          <div class="div-17">
-            <div class="div-18">¿Cuenta existente?</div>
-            <div class="div-19">Iniciar Sesión</div>
-          </div>
-          <div class="div-20">© 2023 Mesana</div>
-        </div>
-      </div>
-      <div class="column-2"><div class="div-21"></div></div>
+<!DOCTYPE html>
+<body>
+<div class="container">
+  <div class="column">
+    <div class="logo">Mesana</div>
+    <div class="title">Registro</div>
+    <div class="description">Crea una cuenta para disfrutar de nuestros servicios</div>
+    <input type="text" placeholder="Nombre*" />
+    <div class="spacer"></div>
+    <input type="text" placeholder="Email*" />
+    <div class="spacer"></div>
+    <input type="password" placeholder="Contraseña*" />
+    <div class="spacer"></div>
+    <button class="signup-button">Registrarse</button>
+    <button class="social-signup">
+      <img loading="lazy" src="/media/svg/Ggoogle.svg" class="login-with-google" />
+      <div class="social-text">Registrarse con Google</div>
+    </button>
+    <div class="existing-account">
+      <div>¿Cuenta existente?</div>
+      <div class="login-link"><a href="iniciar.html">Iniciar Sesión</a></div>
     </div>
   </div>
-  <style>
-    .div {
-      border: 1px solid var(--color-marca-azul-oscuro, #123747);
-      background-color: var(--White, #fff);
-    }
-    .div-2 {
-      gap: 20px;
-      display: flex;
-    }
-    @media (max-width: 991px) {
-      .div-2 {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0px;
-      }
+  <div class="column-2">
+    <img src="/media/svg/registro.svg" alt="Registro SVG" class="svg" />
+  </div>
+</div>
+</body>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .container {
+    border: 1px solid var(--color-marca-azul-oscuro, #123747);
+    background-color: var(--White, #fff);
+    display: flex;
+    height: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0px;
+    padding: 0 64px 24px;
+  }
+
+  @media (max-width: 990px) {
+    .container{
+      flex-direction: column;
     }
     .column {
-      display: flex;
-      flex-direction: column;
-      line-height: normal;
-      width: 50%;
-      margin-left: 0px;
-    }
-    @media (max-width: 991px) {
-      .column {
-        width: 100%;
-      }
-    }
-    .div-3 {
-      align-items: center;
-      align-self: stretch;
-      display: flex;
-      flex-grow: 1;
-      flex-direction: column;
-      padding: 0 64px 24px;
-    }
-    @media (max-width: 991px) {
-      .div-3 {
-        max-width: 100%;
-        padding: 0 20px;
-      }
-    }
-    .div-4 {
-      color: #000;
-      justify-content: center;
-      align-self: stretch;
-      background-color: var(--White, #fff);
-      padding: 14px 0;
-      font: 600 25px/38px Roboto, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-4 {
-        max-width: 100%;
-      }
-    }
-    .div-5 {
-      align-self: center;
-      color: var(--Black, #000);
-      text-align: center;
-      margin-top: 128px;
-      max-width: 480px;
-      font: 700 48px/58px Roboto, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-5 {
-        max-width: 100%;
-        font-size: 40px;
-        line-height: 54px;
-        margin-top: 40px;
-      }
-    }
-    .div-6 {
-      align-self: center;
-      color: var(--Black, #000);
-      text-align: center;
-      margin-top: 24px;
-      max-width: 480px;
-      font: 400 18px/27px Roboto, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-6 {
-        max-width: 100%;
-      }
-    }
-    .div-7 {
-      align-self: center;
-      color: var(--Black, #000);
-      margin-top: 32px;
-      max-width: 480px;
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-7 {
-        max-width: 100%;
-      }
-    }
-    .div-8 {
-      align-items: center;
-      align-self: center;
-      border: 1px solid var(--Black, #000);
-      background-color: var(--White, #fff);
-      display: flex;
-      margin-top: 8px;
-      width: 480px;
-      height: 48px;
-      flex-direction: column;
-    }
-    @media (max-width: 991px) {
-      .div-8 {
-        max-width: 100%;
-      }
-    }
-    .div-9 {
-      align-self: center;
-      color: var(--Black, #000);
-      margin-top: 24px;
-      max-width: 480px;
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-9 {
-        max-width: 100%;
-      }
-    }
-    .div-10 {
-      align-items: center;
-      align-self: center;
-      border: 1px solid var(--Black, #000);
-      background-color: var(--White, #fff);
-      display: flex;
-      margin-top: 8px;
-      width: 480px;
-      height: 48px;
-      flex-direction: column;
-    }
-    @media (max-width: 991px) {
-      .div-10 {
-        max-width: 100%;
-      }
-    }
-    .div-11 {
-      align-self: center;
-      color: var(--Black, #000);
-      margin-top: 24px;
-      max-width: 480px;
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-11 {
-        max-width: 100%;
-      }
-    }
-    .div-12 {
-      align-items: center;
-      align-self: center;
-      border: 1px solid var(--Black, #000);
-      background-color: var(--White, #fff);
-      display: flex;
-      margin-top: 8px;
-      width: 480px;
-      height: 48px;
-      flex-direction: column;
-    }
-    @media (max-width: 991px) {
-      .div-12 {
-        max-width: 100%;
-      }
-    }
-    .div-13 {
-      color: var(--White, #fff);
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-      border: 1px solid var(--Black, #000);
-      background-color: var(--Black, #000);
-      margin-top: 24px;
-      width: 480px;
-      max-width: 100%;
-      padding: 12px 20px;
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    .div-14 {
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-      border: 1px solid var(--Black, #000);
-      display: flex;
-      margin-top: 16px;
-      width: 480px;
-      max-width: 100%;
-      flex-direction: column;
-      padding: 12px 20px;
-    }
-    .div-15 {
-      display: flex;
-      gap: 12px;
-    }
-    .img {
-      aspect-ratio: 1;
-      object-fit: contain;
-      object-position: center;
-      width: 24px;
-      overflow: hidden;
-      max-width: 100%;
-    }
-    .div-16 {
-      color: var(--Black, #000);
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    .div-17 {
-      align-self: center;
-      display: flex;
-      margin-top: 24px;
-      gap: 5px;
-    }
-    .div-18 {
-      color: var(--Black, #000);
-      text-align: center;
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    .div-19 {
-      color: var(--Black, #000);
-      text-align: center;
-      text-decoration-line: underline;
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    .div-20 {
-      color: var(--Black, #000);
-      text-align: center;
-      align-self: stretch;
-      margin-top: 152px;
-      font: 400 16px/24px Roboto, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-20 {
-        max-width: 100%;
-        margin-top: 40px;
-      }
+      width: auto;
+      height: auto;
+      padding:20px;
     }
     .column-2 {
-      display: flex;
-      flex-direction: column;
-      line-height: normal;
-      width: 50%;
-      margin-left: 20px;
+      width: auto !important;
+      height: auto;
+      margin: 20px;
     }
-    @media (max-width: 991px) {
-      .column-2 {
-        width: 100%;
-      }
-    }
-    .div-21 {
-      align-self: stretch;
-      background: linear-gradient(
-        207deg,
-        rgba(1, 255, 193, 0.91) 0%,
-        rgba(81, 138, 207, 0.91) 100%
-      );
-      display: flex;
-      width: 720px;
-      height: 1013px;
-      flex-direction: column;
-      margin: 0 auto;
-    }
-    @media (max-width: 991px) {
-      .div-21 {
-        max-width: 100%;
-      }
-    }
-  </style>
+  }
+
+  .logo {
+    color: #000;
+    justify-content: center;
+    align-self: stretch;
+    background-color: var(--White, #fff);
+    padding: 14px 0;
+    font: 600 25px/38px Roboto, sans-serif;
+  }
+
+  .title {
+    align-self: center;
+    color: var(--Black, #000);
+    text-align: center;
+    margin-top: 128px;
+    max-width: 480px;
+    font: 700 48px/58px Roboto, sans-serif;
+  }
+
+  .description {
+    align-self: center;
+    color: var(--Black, #000);
+    text-align: center;
+    margin-top: 24px;
+    max-width: 480px;
+    font: 400 18px/27px Roboto, sans-serif;
+  }
+
+  input {
+    align-self: center;
+    color: var(--Black, #000);
+    margin-top: 32px;
+    width: 80%;
+    font: 400 16px/24px Roboto, sans-serif;
+    border: 1px solid var(--Black, #000);
+    background-color: var(--White, #fff);
+    height: 48px;
+    padding: 0 16px;
+  }
+
+  .spacer {
+    margin-top: 8px;
+  }
+
+  button.signup-button {
+    color: var(--White, #fff);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: 1px solid var(--Black, #000);
+    background-color: var(--Black, #000);
+    margin-top: 24px;
+    width: 480px;
+    max-width: 100%;
+    padding: 12px 20px;
+    font: 400 16px/24px Roboto, sans-serif;
+    cursor: pointer;
+  }
+
+  .social-signup {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: 1px solid var(--Black, #000);
+    background-color: transparent;
+    display: flex;
+    margin-top: 16px;
+    width: 480px;
+    max-width: 100%;
+    flex-direction: row;
+    padding: 12px 20px;
+  }
+
+  .img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .social-text {
+    color: var(--Black, #000);
+    font: 400 16px/24px Roboto, sans-serif;
+  }
+
+  .existing-account {
+    align-self: center;
+    display: flex;
+    margin-top: 24px;
+    gap: 5px;
+    font: 400 18px/27px Roboto, sans-serif
+  }
+
+  a {
+    color: var(--Black, #000);
+    text-align: center;
+    font: 400 16px/24px Roboto, sans-serif;
+    text-decoration: underline;
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  .svg {
+    width: 100%; 
+    height: 100vh; 
+    object-fit: cover;
+  }
+  .login-with-google{
+    padding-right: 5%;
+  }
+
+</style>
+</html>
   
